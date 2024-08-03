@@ -11,6 +11,12 @@ body {
 
 .container {
     text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 90%;
+    max-width: 400px;
 }
 
 form {
@@ -19,4 +25,37 @@ form {
 
 input {
     margin: 5px 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    .container {
+        width: 80%;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+        max-width: 600px;
+    }
 }
