@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>体感温度计算器</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>体感温度计算器</h1>
+        <form id="calcForm">
+            <label for="temperature">温度 (°C):</label>
+            <input type="number" id="temperature" name="temperature" required>
+            <label for="humidity">湿度 (%):</label>
+            <input type="number" id="humidity" name="humidity" required>
+            <label for="windspeed">风速 (km/h):</label>
+            <input type="number" id="windspeed" name="windspeed">
+            <button type="button" onclick="calculateFeelTemperature()">计算</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
